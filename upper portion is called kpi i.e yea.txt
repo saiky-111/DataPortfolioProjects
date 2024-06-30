@@ -1,0 +1,125 @@
+eCommerce Revenue Analytics Portal
+Web Store Sales Tracker
+Online Sales Performance Monitor
+
+https://docs.google.com/spreadsheets/d/1L6aBX0uNlzKiJb7JHdkNUile18s9CI4r/edit?gid=1589100670#gid=1589100670
+
+https://www.youtube.com/watch?v=xHTUP1Dxu-M&t=138s
+
+
+upper portion is called kpi i.e year on year growth, spark lines
+->download it from google sheets from files-> download-> excel
+
+-> First convert the data into tables
+i.e by Ctrl+T  and OK
+-> We convert it in tables, so that in future if we have to enter (or add) data in the table, automatically it will go to in the range of the table and when we refresh it, our dashboard will also reflect changes(dynamically) made by the new data.
+
+1.-> Sales and Profit analysis (combo Chart)
+-> Pivot Table summarizes or aggregates the whole data
+
+-> Click on Pivot Table, We can do the design in one worksheet only, but for systematic appraoch we will design every chart and KPI design in new Worksheet. 
+
+-> first, we will check(tick mark) the order date
+-> Now when we drill down years-> we get quarters, -> then we get months under that quarter
+
+-> Drag the years row and the quarter row (from bottom right rows table) into the sheet.
+-> now we see only the row lables in months
+-> Now we search for sales in the pivotTable fields , then drag it into the values box in below right.(or you can simply tick mark it)
+-> Now we search for profit in the pivotTable fields , then drag it into the values box in below right.(or you can simply tick mark it)
+-> Now we'll format the data of Sum of Sales and Sum of Profit
+
+-> First we'll keep it for two decimal points and -> well convert it to dollars e.g-> 95365.93 -> convert it to -> 95.36k in $
+
+-> Select all the data of Sum of Sales and Sum of Profit and press ctrl+1 -> In format cells option->Custom -> and type $ 0.00, "K" (you will find it at the last next time you do any project) -> 0.00, here' , ' will convert it to K .Means it will take our pointer ahead of 3 decimals value ->"K" this is hard coded value of K, means it will display K.
+
+-> Now we'll make Chart
+-> Now click on any data (e.g. $147.08)-> above click on PivotTable Analyze-> then Pivot Chart-> Now since we have to make combo chart or dual axis chart , click on Combos
+-> Since we want both to be on different axis, tick mark the secondary axis of Sum Of Profit
+-> And we want the area chart, not line chart, so select the first chart of Area.-> Then Ok-> Our chart is ready.
+->Now right click on any one button on the chart(E.g sum of Sales) -> Hide all field buttons on chart.
+-> Name the sheet1 as Combo Chart
+--------------------------------------------------------------------------------------------------------------------
+1.-> CategoryWise Profit (Waterfall Chart)
+
+-> Now we'll design waterfall chart
+-> Again go to Data sheet , insert-> pivot table-> new worksheet-> Ok
+->Search for category and tick it or drag it to rows, then search profit and tick it or drag it to columns
+-> Now click on any data-> above click on PivotTable Analyze-> then Pivot Chart-> Now since we have to make waterfall chart , click on Waterfall
+_> Message came: you cant create this chart type with data inside a Pivot Table.
+->so we'll have to take the data out of the pivot table.
+-> Basically we have to copy it.
+-> Beside the datas we already have write Category, Profit , two columns we created.
+-> Below Category, type = and select the corresponding first value in the pivot table created earlier(here Furniture) + Enter -> Then slide the box below , then all values will be copied.
+-> You can make the row bigger by dragging or oxtending on the corresponding column's letter (here E).
+-> Again , under Profit: in the first box, type = and select the corresponding first value in the pivot table created earlier(here 18451.2728) + Enter 
+->Now, if we slide the box below, all values are coming same i.e 18451.2728
+-> so, for this see the formula above: for the first value under Profit column:
+=GETPIVOTDATA("Profit",$A$3,"Category","Furniture")
+-> Above formula is coming for all values i.e all "Furniture" values are coming in table.
+-> For this, delete "Furniture" , and select the first row under category , and press enter.
+-> Formula changed to :=GETPIVOTDATA("Profit",$A$3,"Category",A4)
+-> similary for below values A5, A6.....etc.
+
+->Now, if we slide the box below, all values are coming as we expected.
+-> Now just delete (type delete)the A7 value i.e Grand Total value(since it is not an actual member of the field)(Grand Total is a measure calculated through Pivot Table)(It does not come from the data)
+so copy it as it is hard-codedly.(i.e press =, then select the value then enter)
+->Then select the total new table created, -> then insert ->in Recommended Charts there will be Waterfall Chart, select it.
+->Now, since we want the grand total starting from zero, 
+Right click on the grand total chart until it becomes deep blue, then click on ->Format Data Point-> checkmark the Set as Total
+option.
+-> Our waterfall chart is ready.
+-> Now to change the number formatting of it:
+you can ->either select all the numbers and press ctrl+1
+-> or in Home -> In Number-> click on last small symbol-> then Custom-> then at last our own customized one will be there ($ 0.00, "K" )
+-> Name the Sheet 2 as Waterfall Chart
+------------------------------------------------------------------------------------------------------------------------------
+3.-> CategoryWise Sales Share % (Pie Chart)
+-> Now we'll design pie chart
+-> Again go to Data sheet , insert-> pivot table-> new worksheet-> Ok -> Name it: Pie Chart
+->Search for category and tick it or drag it to rows, then search sales and tick it or drag it to columns
+->But, to show it in percentages, right click on any one value of Sum of Sales column.-> go to show values as -> Go to  % of Grand Total
+-> Now values will be shown in percentages.
+-> Now select on any data on the table, then PivotTable Analyse option will be activated (above). -> go to Pivot Chart -> Select on Pie -> At the last there is Donut, select it.->Ok-> Now hide the buttons on chart by right clicking->Hide all field buttons on chart.
+->On clicking the chart, you can see a + option(chart elements), there turn on(tick) the data labels.
+-> Now to increase the width of the donut, right click  on the donut area on the chart -> Go to Format Data Series -> Decrease Donut Hole Size to 62%. -> Increase the Donut Explosion(the space between the two donuts) to 1%.
+-> Delete the word Total in the chart.
+->Pie chart is ready, name the sheet to Pie Chart.
+--------------------------------------------------------------------------
+4.-> Sales by State (Map Chart)
+-> Now we'll design map chart
+-> Again go to Data sheet , insert-> pivot table-> new worksheet-> Ok -> Name it: Map Chart
+->Search for state and tick it or drag it to rows, then search sales and tick it or drag it to columns
+-> Now select on any data on the table, then PivotTable Analyse option will be activated (above). -> go to Pivot Chart -> Select on Map -> Same Error will come. i.e we have to copy the data outside pivot table.
+->So beside the pivot table, we create 2 columns, one is State, and another is Sales.
+-> Below State, type = and select the corresponding first value in the pivot table created earlier(here Alabama) + Enter -> Then slide the box below , then all values will be copied.
+-> You can make the row bigger by dragging or extending on the corresponding column's letter (here D).
+-> Again , under Sales: in the first box, type = and select the corresponding first value in the pivot table created earlier(here 19510.64) + Enter 
+->Now, if we slide the box below, all values are coming same i.e 19510.64
+-> so, for this see the formula above: for the first value under Profit column:
+=GETPIVOTDATA("Sales",$A$3,"State","Alabama")
+-> Above formula is coming for all values i.e all "Alabama" values are coming in table.
+-> For this, delete "Alabama" , and select the first row under state (*very important) , and press enter.
+-> Formula changed to :=GETPIVOTDATA("Sales",$A$3,"State",A4)
+-> similary for below values A5, A6.....etc.
+
+->Now, if we slide the box below, all values are coming as we expected.
+-> Now just delete (type delete)the A7 value i.e Grand Total value(since it is not an actual member of the field) (it is not required here)
+
+->Now convert all these numbers in $ and k.
+-> select all the values under Sales, click the small icon in Home-> Number-> Custom -> our customized value at last.
+->Then select the total new table created, -> then insert ->in Recommended Charts there will be Waterfall Chart, select it.
+-> to make map chart, Internet should be on-> It  sends the geographical data to cloud server, then match and shows the map.
+-> select all the values except Grand total -> then Insert -> Maps -> Map chart
+-> this will be dynamic, we can show it by bringing in Insert slicer.
+-> Select on any value on Sum of Sales(any of the numeric values in the Pivot Table)-> then go to PivotTable Analyze-> then Insert Slicer-> then tick mark Year ->ok
+-> Now, click on any of the year-> it will work. Why is it working?
+-> It became dynamic,Since, we got(extracted) the values from the pivot table, now from the extracted values we made the map-> so they all will change, since they are interconnected.
+-> (*)It worked because we did everything based on formulas.If you copy paste, slicer won't work.
+--------------------------------------------------------------------------
+5.-> Top 5 Subcategories by sales ( Chart)
+-> Again go to Data sheet , insert-> pivot table-> new worksheet-> Ok -> Name it: Top 5
+->Search for sub-category and tick it or drag it to rows, then search sales and tick it or drag it to columns
+-> Now since we have to take the Top 5, -> we have to sort it-> select any numeric value on pivot table(Sum of sales here)-> right click-> sort->Largest to Smallest
+->For top 5, in the current Pivot Table, in Row Labels, click on the small icon(at last),-> go to Value Filters-> Go to Top 10 -> decrement it to 5 -> Ok
+-> Now select any one numerical value from pivot table,-> go to PivotTable Analyze-> got to Pivot Chart-> go to Bar Chart-> Ok
+------------------------------------------------------------------
