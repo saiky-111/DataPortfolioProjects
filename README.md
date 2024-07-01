@@ -26,4 +26,4 @@
 - [x] **Tableau** - 
 
 
-- [x] **POWER BI** - 
+- [x] **PowerBI** - 
