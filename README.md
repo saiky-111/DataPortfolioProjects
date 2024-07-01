@@ -12,4 +12,6 @@
   - eCommerce Revenue Analytics Portal: Pivot Tables, Pivot Chart, Slicers <br />
 *Review the EXCEL Script:* **[HERE](https://github.com/saiky-111/DataAnalystPortfolioProjects/blob/master/eCommerce%20Revenue%20Analytics%20Portal.xlsx)**<br />
 
-<!--![Dashboard](visuals/excel/PivotReports.png)-->
+![Excel Dashboard](images/Dashboard_1.png)<br>
+![Completely Dynamic With Filters](images/Dashboard_2.png)
+
