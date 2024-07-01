@@ -120,6 +120,187 @@ you can ->either select all the numbers and press ctrl+1
 -> Again go to Data sheet , insert-> pivot table-> new worksheet-> Ok -> Name it: Top 5
 ->Search for sub-category and tick it or drag it to rows, then search sales and tick it or drag it to columns
 -> Now since we have to take the Top 5, -> we have to sort it-> select any numeric value on pivot table(Sum of sales here)-> right click-> sort->Largest to Smallest
-->For top 5, in the current Pivot Table, in Row Labels, click on the small icon(at last),-> go to Value Filters-> Go to Top 10 -> decrement it to 5 -> Ok
+->For top 5, in the current Pivot Table, in Row Labels, click on the small icon(at last),-> go to Value Filters-> Go to Top 10 -> decrement it to 5 -> want it on the basis of(here Sum Of Sales)-> Ok
 -> Now select any one numerical value from pivot table,-> go to PivotTable Analyze-> got to Pivot Chart-> go to Bar Chart-> Ok
-------------------------------------------------------------------
+->But we wanted the larger values at the starting , 
+->so one way is : what we can do is : to reverse.
+->Another way is: But here we will select a numerical value from pivot table, -> right click on it->sort->sort smallest to largest.(Jugaad)
+-> we got the values as we wanted-> Now hide the buttons from the chart,by right clicking on it and remove any texts in the chart(here Total). 
+-> Completed all the charts
+-------------------------------------------------------------
+->Now we'll design the KPI's
+-> Again go to Data sheet , insert-> pivot table-> new worksheet-> Ok -> Name it: KPI
+->Search for order date and tick it or drag it to rows, but since i want only the months, so well drag the years and quarters onto the sheet. -> then search sales and tick it or drag it to columns
+->Then select a numeric value -> go to PivotTable Analyze->then Pivot Chart-> Line-> Ok-> Then remove all things from the chart , only to get the line(Like Sparkline).(then make it small)
+-> now it behaves just like a Sparkline-> (here) according to the months this is the sales sparkline.
+-> But to make an actual sparkline, select all the numeric values(here Sum of Sales) except the Grand Total values, ->then Insert->  then above go to Line-> give the location where you want to make the sparkline->Ok.
+-> To bold the actual sparkline, select the sparkline, -> got to sparkline, ->then sparkline colour->then Weight-> then Select-> Ok
+-> Since, the quality becoming very low, when using in dashboard,we are not using the actual Spark lines.
+-----------------------------
+->Copy paste the values for another sparkline,but instead of Sum of Sales, We want profits.
+-> For that, select any numeric value of the table(copied one),-> Go to PivotTable Analyze-> A the top right select Field List.
+-> Remove the Sum of Sales to the sheet and tick mark the Profit or drag it down to the values table.
+->Then select a numeric value -> go to PivotTable Analyze->then Pivot Chart-> Line-> Ok-> Then remove all things from the chart , only to get the line(Like Sparkline).(then make it small)
+----------------------------
+->Copy paste the values for another sparkline,but instead of Sum of Sales, We want quantity.
+-> For that, select any numeric value of the table(copied one),-> Go to PivotTable Analyze-> A the top right select Field List.
+-> Remove the Sum of Profits to the sheet and tick mark the Quantity or drag it down to the values table.
+->Then select a numeric value -> go to PivotTable Analyze->then Pivot Chart-> Line-> Ok-> Then remove all things from the chart , only to get the line(Like Sparkline).(then make it small)
+------------------------------
+->Copy paste the values for another sparkline,but instead of Sum of Sales, We want OrderID.
+-> For that, select any numeric value of the table(copied one),-> Go to PivotTable Analyze-> A the top right select Field List.
+-> Remove the Sum of Quantity to the sheet and tick mark the Order ID or drag it down to the values table.
+->Then select a numeric value -> go to PivotTable Analyze->then Pivot Chart-> Line-> Ok-> Then remove all things from the chart , only to get the line(Like Sparkline).(then make it small)
+------------------------------
+-> Now we'll have to calculate Profit Margin, now it is not in our data coz we'll have to calculate it, then add to our data, then have to make the sparkline.
+-> Firstly,Copy paste the values for another sparkline,but instead of Count of Order ID, We want Profit Margin.
+-> For that, select any numeric value of the table(copied one),-> Go to PivotTable Analyze-> A the top right select Field List.
+-> Remove the Count of Order ID to the sheet 
+->Profit Margin Formula:
+Sum of profit / Sum Of Sales
+-> To introduce the formula, click on any value on the (newly copied table)-> Go to PivotTable Analyze->go to Fields, Items & sets -> then  Calculation Field.
+-> Give the name of the field:
+Profit Margin
+Formula:
+= Profit/Sales -> OK
+
+->Then select a numeric value -> go to PivotTable Analyze->then Pivot Chart-> Line-> Ok-> Then remove all things from the chart , only to get the line(Like Sparkline).(then make it small)
+------------------------------------------------------------
+-> The less Pivot Charts we use , more the Performance of our Dashboard.->Since when we click on the filters(Slicers) and apply on the pivot charts, it takes time to filter the data on the pivot charts, so it reduces the Performance of the Dashboard.
+-> So to increase the Performance of Pivot Charts, we should use mini-mum use of Pivot Charts.
+------------------------------------------------------------
+-> Now, we got 5 grand total values from each table, from each Grand Total we have to take it's value out(copy) of the pivot table, by = then, selecting the grand total value, then ok.
+-> WE took the value outside, like that because, Firstly, it will stay dynamic, if we take it outside by formula,(by if we copy paste, it won't work) since it's a shape and we will the kpi inside the shape.
+-> the shape doesn't recognize the values from pivot table, so we took the value outside.
+->So, take out all the Grand Total values one by one from the Pivot Table. 
+
+-> Now we need to change the currency to Dollar in each of the taken out values from Pivot Table.
+-> For that, select the value, either press ctrl+1 or you can see above in Home->in the Number Box-> Under General or Acounting-> first option $ sign.-> Select $ (English United States)
+->And decimal points should be two.-> For that, in Number box-> Under Accounting at the last there is option to increase or decrease decimal points.
+------------------------------
+-> For quantity, there are not Measured in Dollars, for this we'll have to add the # sign.
+-> For that either Ctrl +1, or under Number Box press the small icon, to set custom value->select 0-> then type->
+"#" 0-> Ok
+-> Similary do it for Order ID.
+-> for Profit Margin,we calculate it in Percentage, -> under Number-> there is % sign click it -> then for upto two digit decimal points, click on the option to increase or decrease decimal points.
+------------------------------------------------------------
+-> Now, well take out the YOY growth in Coloured Combinations.
+-> Got to Data sheet-> Insert->New pivot Table-> Ok-> Name the sheet as KPI YOY.  
+->In Pivot Table Fields-> Tick the YEARS (at the last)(since it's a automatically generated field by excel according to date fields )(dont tick the YEAR one)-> Then Tick on Sales->Then Tick On Profit-> then Take Quantity->Then for Order ID , take it and drag it(don't tick mark it) to the values box below, at the last. (Since Order ID is a Alphanumeric VAlue, it is treated as a dimension. So, to convert it to Quantity , we will drag it to values)
+-> Then tick mark on Profit Margin.
+-> So now, we don't want the Grand Totals,in this KPI YOY sheet, so right click on any one of the numeric values of Grand Total -> Pivot TAble Options -> Total & Filters ->Uncheck both the boxes containing: Show grand totals for rows and Show grand totals for columns.-> Ok
+-----------------------------
+->YOY growth is according to the previous year, how much it increased or decreased in terms of percentage.
+-----------------------------
+Formula: (2014 sales/ 2013 sales)-1
+-----------------------------
+-> So at any random box, we'l  calculate it.
+-> type = , then select the 2014 sales value , -> then put this divided by symbol / -> then select the 2013 sales value-> put the whole thing in bracket -> then put -1.
+-> the formula would look like:=(GETPIVOTDATA("Sum of Sales",$A$3,"Years",2014)/GETPIVOTDATA("Sum of Sales",$A$3,"Years",2013))-1
+-> then Enter
+->Similarly take out for Profit, Quantity, Order ID, Profit Margin.
+------------------------------------------------------------
+-> Now we'll have to give it's colour Combination-> +ve -> then upward arrow & green , negative , then-> downward arrow & red.
+->So,select the first calculated YOY value,-> then Ctrl+1 -> then Custom -> Type: [Green]▲0.00%;[Red] ▼0.00%
+->Ok-> Green Appeared-> To give it to all the values-> select this coloured value-> go to -> home-> then Format Painter-> then extend it to all the values.
+-> We'll change the all the coloured values font to Lato Black, by selecting all the values-> then above-> Calibri -> to Lato Black.
+(-> For the arrow(or traingle) symbols(above),-> go to Insert-> Symbols->Symbol-> here we can find it. But we'll google upward arrow for yoy, we'll get it.)
+------------------------------------------------------------
+-> Now all our designs are ready, just we will do it's layouts and the placing of it.
+-> Again go to Data sheet , insert-> pivot table-> new worksheet-> Ok -> Name it: Dashboard
+-> For a background, search on google-> black texture background
+->Downloaded: 1489205.jpg
+-> After downloading, got to-> Page Layout->Background-> Browse and select.
+-> After this go to View-> Grid Lines->Uncheck it. Aslo uncheck the headings.
+---------------------------
+Go to Insert-> Illustrations -> Shapes -> Select the Polygon type shape(after the triangle)
+->Design it accordingly as shown and use Lato Black Font.-> Centre the fonts accordingly by clicking in the icons above.
+-> To put the KPI's inside the shape, first select the shape,-> go to formula bar -> type = to-> go to KPI sheet->select the grand total value of the sales, which is outside the pivot table in $.IMPORTANT. -> then ENTER.
+-> Font LATO BLACK-> FONT WHITE colour
+-> For the spark line, do CTRL+C and ctrl+v in dashboard.
+-> For another value(here YOY growth), do ctrl+hold and drag below(for copy) for another shape .
+-> Select all the shapes(here 4 shapes)-> right click on it-> format object->Line->No line-> i.e we will erase the border.
+-> Then again, select all the 4 shapes-> right click-> FOrmat object-> fill-> Gradient fill-> now remove(delete) the two stops in between in the gradient i.e select and delete-> now give colours to both the remaining stops.
+-> angle 20 degree
+-> 1st stop's transparency-> 20%
+-> 2nd stop's transparency -> 25%
+-> Now, select the chart i.e containing the spark line(whole), right click on the chart, ->Click on Format Chart Area-> Fill-> No Fill.
+-> Then ,in same Format Chart area-> Border-> No line
+-> Again select chart-> format chart area->in chart options(above)-> select series options-> Line->colour change to grey.-> increase the line's width to 2.75 pt.
+-> For putting the YOY growth, in the KPI YOY sheet-> select the first green value-> Ctrl +C-> Come to the dashboard-> select any cell , -> in Home->to paste, there are several options-> In other Paste Options->Select the last Option.(By selecting this option, what we copied, this creates a picture of it, now we can treat it as picture)(It will dynamic)
+-> On the title, Ecommerce Revenue, it's gradient change-> For this->select the whole long shape->Right click->Format shape->Gradient fill-> Now it will automatically take the gradient we selected.
+-> Now rightclick on it again->Line-> No line.
+-------------------------
+-> Now select all the 4 shapes-> right click-> group->Group.(now it will become a single object)
+-> Now press ctrl + and then drag and make 5 similar kpis.
+-> Now change the names of the respective kpi's
+-> nOW FOR CHANGING THE dollar value of each of them , select the box-> in the formula delete it-> type = ->then in KPI sheet-> copy the 2nd table's dollar value -> enter.Similarly, do it for all of them.
+-> For font , select lato Black-> 16 font->white colour.(all of them)
+----------------------------
+-> for spark line, copy them from KPI sheet and paste them in Dashboard.->select the chart->right click-> Format chart area->Fill->no fill, then -> border-> No line
+-> Now click on it's colour-> right click-> format data series-> series options-> change colour and change width to 2.75pt(do it for all of them)
+----------------------------
+-> in the first kpi-> the chart has very light colour (since we didn't take the chart on our grouping)-> so right click it-> send to back.
+-> Similarly, bring back all the YOY values,-> first copy it from KPI YOY,->then Dashboard->paste-> Other paste options->4th option.
+-------------------------------
+-> Now select all the objects and beake it into a single group-> select all the KPIs-> right click-> group-> group.
+------------------------------
+-> Kpis completed
+-> Now same , insert-> illustrations-> shapes-> Polygon.
+-> To sharp the edges-> click on the orange dots on the image
+-> then right click it-> format shape->Line -> No line-> Fill-> Gradient Fill-> and it will automatically take the gradient colour.
+-> Now ctrl+ drag to make these 5 positions
+->Layouting done
+-------------------------------
+-> Now for the title, same , insert-> illustrations-> shapes-> Polygon.-> Ctrl + drag for 5 such boxes for writing the titles.
+-> right click-> ForMAT SHAPE-> FILL->gRADIENT FILL, THEN->LINE->NO LINE. cHANGE THE COLOUR SLIGHTLY FOR THIS GRADIENT , CHANGE THE COLOUR FOR THE SECOND STOP ONLY.
+->Ctrl+drag for all the title boxes.
+---------------------------------
+-> right click and group the second row
+-> rightclick and then group the third row.
+--------------------------------
+-> Now copy the combo chart and paste it in the first box.
+-> Select the chart , on the + icon -> go to legend-> click on top.
+-> again select and right click the chart-> Format chart area -> fill-> no fill-> , then no line.
+-> Then make the letters white colour but selcting them and color it(above).
+-> To remove the .00 in the axes ,->right click on the axis-> format axis-> Number->Format code-> remove .00 -> add
+-> similarly do for the other axis.
+-> To change the colour of the chart->select the chart->right click-> Format chart area->chart options->Series "Sumof profit"-> Color->Blue
+-> select the chart->right click-> Format chart area->chart options->Series "Sumof sales"-> click on the bar icon-> decrease gapwidth to 59%. then again go on first icon -> fill -> color -> white
+-------------------------
+Waterfall chart-> Ctrl+C , ctrl+V
+-> fORMAT CHART AREA-> nO FILL->NO LINE->
+-> clcik on the bars-> right click->Format data series-> Gradient fill
+-> give the first stop as white and another stop as blue.
+-> Since we have to make this water fall chart descending-> go to the waterfall chart-> click any numeric value of sum of profit-> rightclick-> sort-> largest to smallest.-> since it is dynamic, it is changinf everywhere.
+----------------------------
+-> pie chart, Ctrl+c , Ctrl+v in dashboard,-> + icon-> Legend-> Top.
+-> SELECT CHART-> right click-> format chart area->No fill -> no border.
+-> select on one portion of the donut->right click-> format data point->give green shades colour.
+->select donut->right click-> format data point-> bar icon->donut hole size to 56%
+-> bold the text and make it white.
+-----------------------------
+-> copy map and paste in dashboard-> format chart area-> no fill-> no line
+-> Right click on chart-> Format data series-> Series colour-> Diverging(3-colour)
+-----------------------------------
+->Ctrl+v ctrl+v The BAr chart, i.e the top 5 chart.
+-> select the bar chart-> click on + icon-> we want only axis and data labels-> rest untick all.
+-> Also remove the below axis.
+-> right click on chart-> format chart area-> no line-> no fill.
+-> click on the bar lines->right click-> format data series-> click on the bar icon->series option->gap width bring it to 70% -> then change the colour to light orange
+-> click on the numeric values-> then + sign-> data labels->Inside end( to bring it inside).
+-> To change the format of the numbers->right click on the numbers-> format data labels-> NUmber->Format code:->$ 0.00, "K".
+---------------------------------
+-> in the sales and profit analysis dashboard,-> select the chart -> click on + ->Click on axis titles.
+-> name the axes as sales and profit.
+---------------------------------
+-> No to put the filters:
+Now go to any sheet say: Map chart-> click on any one value->Pivot table analyze->Insert slicer
+-> tick mark-> year, segement, region.
+-> copy all 3 and paste it on dashboard.
+-> Select all the slicers-> go to slicers (above)->In light -> right click on the first one->duplicate-> give name AB->now again when we click on slicer-> we see a custom option ->now right click on it and modify. -> Click on whole slicer-> Format. THen Border-> none, then -> colour-> black
+-> again select the first slicer->slicer->Slicer Styles->right click on the first one(that we made)->Modify-> selected item with data-> format-> then ->font colour-> white , then -> fill colour-> black.
+->select the first slicer->Modify-> header-> format-> then ->font colour-> white , then -> fill colour-> black.
+----------------------------------
+-> Now select slicer-> right click->Report Connection-> tick mark all of them -> except the KPI YOY.(only in this slicer coz this slicer is YOY only)
+-> do this for all the three slicers.(now for all the remaining slivcers tick mark all)
