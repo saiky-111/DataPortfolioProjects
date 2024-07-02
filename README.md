@@ -1,5 +1,5 @@
 # Portfolio Projects
-## Following are my projects in SQL, Python, Tableau & Excel: <br />
+## Following are my projects in SQL, Python, Tableau, PowerBI & Excel: <br />
 
 
 

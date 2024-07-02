@@ -1,13 +1,7 @@
 eCommerce Revenue Analytics Portal
-Web Store Sales Tracker
-Online Sales Performance Monitor
-
-https://docs.google.com/spreadsheets/d/1L6aBX0uNlzKiJb7JHdkNUile18s9CI4r/edit?gid=1589100670#gid=1589100670
-
-https://www.youtube.com/watch?v=xHTUP1Dxu-M&t=138s
 
 
-upper portion is called kpi i.e year on year growth, spark lines
+Upper portion is called kpi i.e year on year growth, spark lines
 ->download it from google sheets from files-> download-> excel
 
 -> First convert the data into tables
@@ -303,4 +297,12 @@ Now go to any sheet say: Map chart-> click on any one value->Pivot table analyze
 ->select the first slicer->Modify-> header-> format-> then ->font colour-> white , then -> fill colour-> black.
 ----------------------------------
 -> Now select slicer-> right click->Report Connection-> tick mark all of them -> except the KPI YOY.(only in this slicer coz this slicer is YOY only)
--> do this for all the three slicers.(now for all the remaining slivcers tick mark all)
+-> do this for all the three slicers.(now for all the remaining slicers tick mark all)
+
+
+Web Store Sales Tracker
+Online Sales Performance Monitor
+
+https://docs.google.com/spreadsheets/d/1L6aBX0uNlzKiJb7JHdkNUile18s9CI4r/edit?gid=1589100670#gid=1589100670
+
+https://www.youtube.com/watch?v=xHTUP1Dxu-M&t=138s
