@@ -16,7 +16,7 @@
 
 ## Overview
 This E-Commerce Revenue Analytics Portal involves designing a comprehensive Excel dashboard to visualize and analyze sales data. The dashboard includes key performance indicators (KPIs) such as total sales, profit, quantity sold, number of orders, and profit margin. It features interactive charts and graphs for detailed insights into sales trends, category-wise performance, regional distribution, and top products. The dashboard is equipped with filters for year, region, and segment, enabling users to dynamically explore and understand the data.<br>
-![Excel Dashboard:](images/Dashboard_1.png)<br>
+![Excel Dashboard:](01_EXCEL/images/Dashboard_1.png)<br>
 
 ## Insights and Questions Answered
 
@@ -39,7 +39,7 @@ This E-Commerce Revenue Analytics Portal involves designing a comprehensive Exce
    - What is the distribution of sales across different regions and states?
 
 ### Excel Dashboard : Completely Dynamic With Filters<br />
-![Completely Dynamic With Added Filters:](images/Dashboard_2.png)
+![Completely Dynamic With Added Filters:](01_EXCEL/images/Dashboard_2.png)
 
 
 
