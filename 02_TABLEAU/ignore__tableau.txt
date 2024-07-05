@@ -1,0 +1,7 @@
+ignore__tableau:
+
+Connect to data-> Microsoft excel file-> click on it , and open the data.
+
+-> What you see small table at the left, at the end is Metadata
+
+-> And the big table, at the right -> here you can edit the data in the table here
