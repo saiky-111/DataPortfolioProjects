@@ -53,4 +53,47 @@ LOGIC: TOTAL ATTRITION/ TOTAL EMPLOYEE COUNT
 ---------------------------------------------
 -> Now, Active Employees
 -> For Active Employee = Employee count- Attrition Count
--> For this: Again Click on Downward Arrow->
+-> For this: Again Click on Downward Arrow-> Name it as : Active Employees
+FORMULA: SUM([Employee Count])-SUM([Attrition Count])
+-> Then click on OK-> Then Double click on it, in the Tables section.
+-> We want the Active Employees , after the Attrition RAte, so drag it to the last.
+------------------------
+Now for the last kpi, we want average age.
+->Search for age in the above search bar above tables.
+-> Double click on it.
+-> In the Measure Values, we see it is taking SUM (Age),(by default) but we want average.
+-> For that,right click on green SUM(Age) -> Measure(SUM) -> Average
+----------------------------------------------------
+-> Now we'll change the format of the fields that we are having.(the green boxes i.e measure values)
+-> Right Click on SUM(Employee Count) -> Format-> (see above left)Numbers-> Number(Custom)-> Decimal Places:0
+
+-> Lets' add one filter to check it:
+-> Search Education on the search box -> Then drag it under the Filters.-> Then       use all-> Apply-> Ok
+-> Now right click on Education(blue)-> Show filters-> Then at the right it will be shown.
+-> Now when you apply the filter , we see different decimal points on different KPIs. So we want to make it uniform.
+
+(-> Changing the format so as to make it constant throughout, otherwise , if we dont do these, then in some result it will show two decimal points, somewhere three, and so on. So we don't want this, so we'll make it round figure.)(It doesn't happen when we use the Interactive filters, but does happen when we will be using the Interactive Filters)
+-> Again Right Click on SUM(Attrition Count) -> Format-> Numbers(see above left)-> Number(Custom)-> Decimal Places:0
+-> Leave the Attrition Rate, as we want it in Percentage only.
+-> Again Right Click on SUM(Active Employees) -> Format-> Numbers(see above left)-> Number(Custom)-> Decimal Places:0
+-> Again Right Click on AVG(Age) -> Format-> Numbers(see above left)-> Number(Custom)-> Decimal Places:0
+--------------------------------------------------
+-> The filter that we created will be used for all the charts from now.
+
+-> So,Right click on the Education Filter, -> Then Apply to Worksheets-> All using this data source
+(-> means whenever we will be designing any sheet further , the default filter will be automatically applied.Because we made it at a data source level.)
+----------------------------------------------------
+-> Next chart will be LOLLIPOP CHART. It will be a custom chart.
+
+-> Select a ne sheet from bottom -> Name it as : Attrition By Gender
+-> This chart will give insight for: wrt male and female , how many people are leaving the company.
+-> Search for gender, then drag it and put in on Rows(above).
+-> Then search for Attrition Count calculation, which we made before, then drag it in the COlumns(above).
+-> So, we see we got a bar chart.
+-> Above from Standard, make it-> Entire View.
+-> To make this chart a Lollipop Chart, we have to make a circle at the tip.
+-> So, to add that circle, we have to make it as Dual Axis Chart.
+-> To make it as a Dual Axis Chart, In the Columns, there is SUM(Attrition Count) , press ctrl + and drag it on right to make another instance of it.
+-> In the left, In Marks Card, also TWO INSTANCES have been created.
+-> So in MArks card-> in the second major-> SUM(Attrition By Gender)-> Click on the downward arrow, make it as Circle.
+-> Now, for dual axis chart,

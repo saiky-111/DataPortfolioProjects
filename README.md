@@ -9,7 +9,7 @@
 
 *Kindly download these Excel files from this repository, by clicking View raw, and view them in Microsoft Excel -> Then click on Enable Editing to Apply the Filters.*
 
-  - ECommerce Revenue Analytics Portal: Pivot Tables, Pivot Chart, Slicers <br />
+  - ECommerce Revenue Analytics Portal :  With use of Pivot Tables, Pivot Chart, Slicers <br />
 *Review the EXCEL Script:* **[HERE](https://github.com/saiky-111/DataEnthusiastPortfolioProjects/blob/master/EXCEL_01_ECommerce%20Revenue%20Analytics%20Portal.xlsx)**<br />
 
 ## Project 1: ECommerce Revenue Analytics Portal <br />
@@ -48,9 +48,10 @@ This E-Commerce Revenue Analytics Portal involves designing a comprehensive Exce
   - Ongoing: HR Analytics Dashboard <br />
   - Check it here: https://public.tableau.com/app/profile/saikat.dhibar/viz/FirstHRAnalyticsDashboard/KPI?publish=yes <br />
 <br>
+
 - [x] **SQL** - 
   - Swiggy Data Analysis: Data Cleaning <br />
-
-
+  -Upcoming.
 
 - [x] **PowerBI** - 
+  -Upcoming.
