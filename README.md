@@ -47,7 +47,7 @@ This<b> E-Commerce Revenue Analytics Portal</b> involves designing a comprehensi
 
 - [x] **Tableau** - 
   - Ongoing: HR Attrition Analytics <br />
-  - Check it here: https://public.tableau.com/app/profile/saikat.dhibar/viz/FirstHRAnalyticsDashboard/KPI?publish=yes <br />
+  - Check it here: https://public.tableau.com/app/profile/saikat.dhibar/vizzes <br />
 <br>
 
 - [x] **SQL** - 

@@ -165,3 +165,30 @@ Now we'll start creating our Dashboard Side by Side.
 -> For giving the Dashboard name: (in Left) -> In objects-> drag the Text in the dashboard.->Write it: HR ATTRITION ANALYTICS. Edit it: Select the text->size: 36-> colour: white
 
 -> Go to the Attrition By Gender Sheet->Tables-> Multiple-> Label-> click on three dots->Select the text and make it as size: 9. black, Tableau Semibold.
+----------------------------------------------------------
+Now for Pie Charts:-
+->Go and create a new Sheet:     DepartmentWise Attrition
+-> For this search Department in the search box-> and drag it into Colour.-> Now in Marks-> Change Automatic to Pie.
+-> nOW, SEARCH FOR Attrition Count , now drag it and put it into Angle.
+-> Now, in Marks-> Pie->Color->Edit Colours-> Blue.
+-> Now, there select HR -. Light blue, R&D -> slightly dark, then Sales-> dark.
+
+-> Search Attrition Count-> and drag it into Label. 
+-> In marks-> right click on the third measure i.e SUM(Attrition Count)(Green)-> thrn Quick Table Calculation-> Percent Of Total
+->In table, the second measure i.e SUM(Attrition Count) , Press ctrl + the second measure and drag it to into Label.
+-> Click on Label-> click three dots->Paste this in the box:
+
+<SUM(Attrition Count)>
+(<% of Total SUM(Attrition Count)>)
+(means interchange the given order, with added brackets)
+-> select the text-> tableau Medium-> 9 -> apply+ok.
+
+-> Now, go to the dashboard and drag the department wise attrition sheet in the dashboard and place it.
+-> Now right click on chart-> Format-> click 3rd icon(Format shading)-> Format Shading-> Default Worksheet-> None.
+-> Go to the Department wise Attrition Sheet-> in Marks-> Label->three dots->Selec the text and make it as : White
+-> Now, place the lagend (HR, R&D , Sales)at the down left corner.
+-> Right click on the legend,-> Format Legends-> Title: Tableau SemiBold, yellow colour, size:9
+->in there only Body-> TAbleau MEdium-> white colour-> size 9
+-> To increase the size of the pie chart-> go to Departmentwise attrition sheet->in marks-> size
+
+-> Double Click on the title of the pie chart-> select the text->make it 12-> semibold-> yellow
