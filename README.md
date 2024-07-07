@@ -46,9 +46,18 @@ This<b> E-Commerce Revenue Analytics Portal</b> involves designing a comprehensi
 
 
 - [x] **Tableau** - 
-  - Ongoing: HR Attrition Analytics <br />
-  - Check it here: https://public.tableau.com/app/profile/saikat.dhibar/vizzes <br />
+## Project 2: HR Attrition Analytics <br />
+## Overview
+This<b> HR Attrition Analytics</b> dashboard provides interactive and comprehensive insights into employee attrition, showcasing metrics such as overall attrition rate, department-wise attrition, and attrition by gender and age group. It also includes job satisfaction ratings across different roles and education fields, allowing for detailed analysis to identify trends and areas of improvement.
+<br><br>
+![Tableau Dashboard:](02_TABLEAU/images/hr_attrition.png)<br>
+
+### Tableau Dashboard : Completely Dynamic With Filters<br />
+  - Check it here: https://public.tableau.com/app/profile/saikat.dhibar/viz/HRATTRITIONANALYTICS_17203705826090/HRATTRITIONANALYSIS <br />
 <br>
+
+
+
 
 - [x] **SQL** - 
   - Swiggy Data Analysis: Data Cleaning <br />
