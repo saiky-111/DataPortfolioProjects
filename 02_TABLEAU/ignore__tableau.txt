@@ -192,3 +192,115 @@ Now for Pie Charts:-
 -> To increase the size of the pie chart-> go to Departmentwise attrition sheet->in marks-> size
 
 -> Double Click on the title of the pie chart-> select the text->make it 12-> semibold-> yellow
+-=---------------------------------------------
+-> Next is Frequency Chart -> Take a new sheet, name it: No Of Employee By Age Group ->(here we will take the age, and find out how many total no of employees are there in our company)
+-> Seach Age in Search Box.-> Right click on it-> Create-> Bins. then-> Size of Bins-> 3 , then there onlt-> In Size of Bins-> Create a NEw Parameter.
+here-> Name: Bin Size.
+-> Minimum->2, Maximum: 10, Step size: 1
+(Step size means whenever we are increasing the bin size, by how much amount, it should be increased.), Ok-> Ok.
+-> Then in Tables column, at the end we can see a Parameters of BIn size is created.
+-> In tables, Search : Age(Bin), select it and drag it into the columns.
+-> In left, Paarameters-> Bin Size->right click->show parameter->then at right when bin size changes, the values in columns changes. For now, keep it as :3.
+-> Now, search for Employee Count->take the employee count and put it in the Rows.
+-> Now, at the top, from Standard-> make it Entire View.
+-> Now, from Rows-> SUM(employee count)-> crtl+  drag it and put it in LAbel in Marks column.
+-> Now go to the Dashboard: make the dashboard sheet at the last.
+-> Now, bring the employee chart in the dashboard by dragging it.(*** But before it make sure, to set the dashboard as Floating).
+->for Changing it's title, -> right click-> Edit Title->select the text-> Tableau Semibold-> size:12-> Yellow Colour.
+-> Right click on Chart-> Format->in left Click Icon(Shading)-> worksheet-> None.
+-> Then click on5th icon->Format Lines-> in Rows-> Grid Lines-> None.
+-> Now, right click on the axis-> Uncheck Show Header
+-> After clicking on Format by right clicking the chart-> In left ,click on the 4th icon, Format Borders->Column-> Grand Total-> Pane: None, Header: None.(do it in Rows as well as Column)
+-> Click on the 5th icon-> Format Lines-> in Rows-> AXIS RULERS-> None.
+-> Right Click on the x axis(in any number)->Format-> Format Age(Bin)-> Font-> Tableau Semibold-> size 8-> white
+-> In above see  a downard arrow named: Filters->click it then SUM(Employee Count)-> Pane-> Font-> WHite-> size9-> Tableau Medium.
+-> There is Age(bin) in the chart, right click and hide it.
+-> Now place the BIN size parameter.-> Right click-> Format Parameter-> Font->yellow->semibold -> size9
+-> there only,-> Body->font-> Tableau SemiBold->white -> size9
+-> To give it Colour->
+go to the No of employee by age group sheet->in rows-> SUM(Employee Count), select it and CTRl+ drag it to color in marks column.
+-> In right, you see SUM(Employee Count) with Colour Shade , click on the downward arrow-> Edit Colours-> Pallete ->Purple-> Apply -> OK
+
+-> now, go to the Dashboard-> in this chart there are 4 options, click on the last option(downwarded arrow)->Legends->Colour Legends-> Employee Count.-> Now place it.
+-> Now right click on it->Format-> Font-> Tableau Semibold-> Yellow. Body-> White
+-> To remove the small tick lines-> Right lik on the graph-> Format-> in left clik on the 5th icon-> Format Lines->Row: Axis Ticks-> None. in columns: Axis Ticks:none.
+-> right click on chart-> Format-> click on the axis-> 5th icon-> Format Lines->
+In columns and Rows make everything as None.
+-------------------------------------------------------------------------
+-> Now, Heat Map Chart or MAtrix Chart.
+-> Take a new sheet, name it: Job Satisfaction Rating
+-> Search for Job Role->: and drag it into Rows.
+-> Then Search for Job Satisfaction and drag it into Columns.-> When we do this-> It is showing the AGgregate values.->but we want just the numbers.
+-> For that,-> take the job satisfaction in Tables and drag it into Dimensions(when you drag it shows two values: MEasured and Dimensions)(so select dimensions)
+->Now take the Job Satisfaction and drag it in Columns, it shows the numbers in table.
+-> Then seRCH FOR EMPLOYEE COUNT-> AND PUT IT INTO tEXT.
+-> For adding Grand Total-> at the top, go to Analysis->Totals-> Show column grand totals, show column grand Totals.
+-> Make it Entire View, from Standard.
+-> Then go to dashboard-> and drag the sheet to dashboard.
+-> Edit title-> Semi Bold-> Yellow-> size15
+
+-> Right click on any row on the chart-> Format->3rd icon-> sheet->Format shading-> Worksheet-> None
+-> then there only: Row banding-> all slelect: NOne.
+->Now go to Job Satisfaction Rating Sheet: in MArks column: select the SUM(Employee COunt)  and press ctrl and drag it to Color.
+-> In right -> Click on show me-> then click on the heatmap chart.
+-> In above click on Swap rows. -> then from  standard to Entire View.
+-> Then at top click on Analysis-> Totals->  Show column grand totals, show row grand totals. 
+-> Go to Dashboard->now,right click on the chart, say, Healthcare Representative-> Format-> In left, in Fields-> SUM(EmployeeCount)-> Default-> FOnt-> Black, Tableau Semi bold, Size:9. -> Allign it to Centre.
+-> There only, in Grand Totals-> Font-> White.
+-> In above Fields-> Job Role->font:tableau semibold, white color
+->Again, In above Fields-> Job Satisfaction->font:tableau semi bold, yellow color,.
+-> In chart right click on Job Satisfaction(small one)-> Format-> Tableau semibold-> yellow.
+-> In top, click on the T symbol -> to On the Label in the Chart.
+
+-> in Job Satisfaction Rating Sheet-> in Marks-> in Color->edit color->Pallete->green-> Apply->Ok.
+
+----------------------------------------------------
+->next design BarChart-take a new sheet: Name: Education Fieldwise Attrition.
+-> For this-> Take Education Field-> IN ROws. 
+-> Now, Take SUM(Attrition Count)-> In Columns.
+->From Standard, Take Entire View. -> In top Click the sort decreasingly.(icon beside the swapping icon)
+->Click on the T symbol (above)to On the labels.
+-> Choose Color, by clicking on the Color-> Blue
+-> Go to Dashboard, drag and bring the Educational Field Wise Attrition to the centre.
+-> EDit title-> TAbleau Semibold-> size15-> Yellow
+-> Right click on the chart-> Format chart-> 3rd icon-> Format Shading->Worksheet-> none.
+, then 5th icon-> in rows, columns->Grid lines, Zero Lines, Axis Rulers, Axis Ticks :None.
+->in that-> Fields-> SUM(Attrition Count)->Default font : white
+->hide the axis lines and headers by right click and untick show header.
+-> To change the numbers colour-> right click on the bar-> deafult-> FOnt-> white, tableau semibold, size:8
+-> Now right click on the Life Science to change it's colour.
+-------------------------------------------------
+-> Now to design the pie charts
+-> New sheet-> Attrition Rate By Gender For Different Age Group
+-> Search for CF Age Band , and put it into Columns.
+-> MArks-> Pie chart. -> change it above as Entire View.
+-> Search Gender-> and put it in Color.
+-> Search for Attrition Count-> and put it into Angle.
+-> Since donut is a custom chart-> so type in row->MIN(1) -> enter
+-> now, press it and ctrl and make another instance of it in row itself.
+-> So go in the second Marks Card, and remove whatever is there, i.e gender,attrition count. now make the size of it as small.
+-> now, in rows , right click on the second AGG(MIN(1)) .-> right click on it-> Dual Axis.
+-> now adjust the size of both.
+-> CF Age band, MIN(1) axis, we don't want, so hide it.
+-> IN the first Marks card, drag the SUM(Attrition Count) and put it into label.
+-> Now, in first marks card-> the t marked SUM(attrition count) -> right click on it-> quick table calculation-> percentage of total.
+-> now drag the angle marked SUM(attrition count)-> drag it to Label.-> click on label-> three dots->type this:
+<SUM(Attrition Count)>
+(<% of Total SUM(Attrition Count)>)
+
+->search for attrition count-> put it into labels of second marks card.
+-> in column-> age band-> right click-> sort->manual-> drag the under 25 to first position.
+-> go to dashboard and drag it.
+-> right click on title and edit it as done before.
+-> right click on the chart -> format chart->3rd icon-> worksheet-> none.
+->in 5th icon-> in sheet, row, column-> all select as NONE.
+-> in 4th icon-> sheet, row, column, -> everything as NONE.
+-> go to Attrition RAte sheet->first marks card-> labels-> three dots->size:8 , tableau medium, apply , ok.
+->place the legend in the chart(male , female)-> right click-> arrange items-> single row.
+----------------------------------------------------------
+-> for filter, click any of the chart-> click analysis(top)-> filter-> education-> right click -> and select multiple values dropdown.
+-> filter format->in left->font white.
+
+-> in the pie chart(big)-> click and see a filter icon is there-> click in it. it will turn to white. means we activated the action filter.
+-> similarly, turn on all the filters.
+-> in below colour the age band as White.
