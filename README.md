@@ -10,7 +10,7 @@
 *Kindly download these Excel files from this repository, by clicking View raw, and view them in Microsoft Excel -> Then click on Enable Editing to Apply the Filters.*
 
   - ECommerce Revenue Analytics Portal :  With use of Pivot Tables, Pivot Chart, Slicers <br />
-*Review the EXCEL Script:* **[HERE](https://github.com/saiky-111/DataEnthusiastPortfolioProjects/blob/master/EXCEL_01_ECommerce%20Revenue%20Analytics%20Portal.xlsx)**<br />
+*Review the EXCEL Script:* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/01_EXCEL/EXCEL_01_ECommerce%20Revenue%20Analytics%20Portal.xlsx)**<br />
 
 ## Project 1: ECommerce Revenue Analytics Portal <br />
 
@@ -56,8 +56,8 @@ This<b> HR Attrition Analytics</b> dashboard provides interactive and comprehens
   - Check the LIVE DASHBOARD here: **[DASHBOARD LINK](https://public.tableau.com/app/profile/saikat.dhibar/viz/HRATTRITIONANALYTICS_17203705826090/HRATTRITIONANALYSIS)**  <br />
 
 
-
 - *Review the EXCEL Script:* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/02_TABLEAU/HR%20Data.xlsx)**<br />
+
 
 
 - [x] **SQL** - 
