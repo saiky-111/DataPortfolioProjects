@@ -54,10 +54,10 @@ This<b> HR Attrition Analytics</b> dashboard provides interactive and comprehens
 
 ### Tableau Dashboard : Completely Dynamic With Filters<br />
   - Check the LIVE DASHBOARD here: **[DASHBOARD LINK](https://public.tableau.com/app/profile/saikat.dhibar/viz/HRATTRITIONANALYTICS_17203705826090/HRATTRITIONANALYSIS)**  <br />
-<br>
 
 
-*Review the EXCEL Script:* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/02_TABLEAU/HR%20Data.xlsx)**<br />
+
+- *Review the EXCEL Script:* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/02_TABLEAU/HR%20Data.xlsx)**<br />
 
 
 - [x] **SQL** - 
