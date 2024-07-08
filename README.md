@@ -19,7 +19,7 @@ This<b> E-Commerce Revenue Analytics Portal</b> involves designing a comprehensi
 <br><br>
 ![Excel Dashboard:](01_EXCEL/images/Dashboard_1.png)<br>
 
-<!--## Insights and Questions Answered
+## Insights and Questions Answered
 
 1. **Total Sales and Profit**: 
    - What are the total sales and profit for the selected period?
@@ -37,7 +37,7 @@ This<b> E-Commerce Revenue Analytics Portal</b> involves designing a comprehensi
    - What are the top 5 subcategories by sales?
 
 6. **Regional Distribution**: 
-   - What is the distribution of sales across different regions and states?-->
+   - What is the distribution of sales across different regions and states?
 
 ### Excel Dashboard : Completely Dynamic With Filters<br />
 ![Completely Dynamic With Added Filters:](01_EXCEL/images/Dashboard_2.png)
