@@ -62,6 +62,16 @@ This<b> HR Attrition Analytics</b> dashboard provides interactive and comprehens
 - [x] **PYTHON** - 
   - Flipkart Web Scrapping<br />
   -Upcoming.
+  ## Web Scrapping <br/>
+  ![Project 1: Flipkart Product Scrapper:](https://github.com/saiky-111/DataPortfolioProjects/blob/master/03_PYTHON/Web_Scrapping/Flipkart_Scrapper/3cgnoB2VXXo-HD.jpg)
+This <b>Flipkart Product Scraper</b> is a web scraper designed to extract product details (name, price, and rating) from Flipkart using Python. The extracted data is saved in a CSV file for easy access and analysis.
+
+Features:
+
+   1. Scrapes product name, price, and rating from Flipkart.
+   2. Converts raw HTML data into a structured CSV file.
+*Check The Python Code :* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/03_PYTHON/Web_Scrapping/Flipkart_Scrapper/Flipkart_Scrapper.ipynb)**<br />
+*Check the Extracted CSV Data:* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/03_PYTHON/Web_Scrapping/Flipkart_Scrapper/flipkart_data.csv)**<br />
 
 - [x] **SQL** - 
   - Swiggy Data Analysis: Data Cleaning <br />
