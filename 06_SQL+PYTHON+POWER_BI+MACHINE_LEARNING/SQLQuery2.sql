@@ -1,12 +1,15 @@
 CREATE DATABASE db_Churn
 
+select * from stg_Churn
+
 Data Exploration -
 
-Check Distinct Values
+Check Distinct Values:
+
 SELECT Gender, Count(Gender) as TotalCount,
-Count(Gender) * 1.0 / (Select Count(*) from stg_Churn)  as Percentage
+Count(Gender) * 100.0 / (Select Count(*) from stg_Churn)  as Percentage
 from stg_Churn
-Group by Gender
+Group by Gender;
 
 SELECT Contract, Count(Contract) as TotalCount,
 Count(Contract) * 1.0 / (Select Count(*) from stg_Churn)  as Percentage
@@ -24,3 +27,7 @@ Count(State) * 1.0 / (Select Count(*) from stg_Churn)  as Percentage
 from stg_Churn
 Group by State
 Order by Percentage desc
+
+
+select Distinct  Internet_Type
+from stg_Churn
