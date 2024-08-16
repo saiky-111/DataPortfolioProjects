@@ -79,8 +79,16 @@ Features:
 
 
 - [x] **SQL** - 
-  - Swiggy Data Analysis: Data Cleaning <br />
-  -Upcoming.
+### Project 4: Swiggy Data Analysis <br />
+### Overview
+This <b>SQL CASE STUDY : SWIGGY </b>contains an in-depth SQL-based analysis of restaurant data. The analysis addresses key business questions such as identifying top-rated restaurants, evaluating city-wise averages, and examining cost and cuisine trends across various restaurants.
 
+![Project 4: Swiggy Data Analysis:](https://github.com/saiky-111/DataPortfolioProjects/blob/master/05_SQL/SWIGGY_CASE_STUDY/image.png)
+
+  - Swiggy Data Analysis: REPORT : CHECKOUT  <br />
+*Check The SQL Report :* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/05_SQL/SWIGGY_CASE_STUDY/swiggy%20sql%20case%20study.pdf)**<br />
+*Check The CSV File :* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/05_SQL/SWIGGY_CASE_STUDY/Swiggy.csv)**<br />
+*Check The SQL Script :* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/05_SQL/SWIGGY_CASE_STUDY/swiggy_data_analysis.sql)**<br />
+  
 - [x] **PowerBI** - 
   -Upcoming.

@@ -135,16 +135,48 @@ FIND THE RESTAURANTS THAT HAVE AN AVERAGE COST WHICH IS HIGHER THAN THE TOTAL AV
 COST OF ALL RESTAURANTS TOGETHER.
 
 select distinct restaurant_name,cost_per_person
-from swiggy where cost_per_person>(
+from swiggy where cost_per_person > (
 select avg(cost_per_person) from swiggy);
 
+-- 1. SELECT DISTINCT restaurant_name, cost_per_person
+--    - Selects unique combinations of 'restaurant_name' and 'cost_per_person'
+--    - Ensures that if multiple rows have the same 'restaurant_name' and 'cost_per_person', 
+--      only one will be included in the result.
+
+SELECT DISTINCT restaurant_name, cost_per_person
+
+-- 2. FROM swiggy
+--    - Specifies the table from which to retrieve the data, in this case, 'swiggy'
+
+FROM swiggy
+
+-- 3. WHERE cost_per_person > (
+--    - Filters the results to include only those rows where the 'cost_per_person' is greater than a certain value.
+--    - This value is determined by the subquery that follows.
+
+WHERE cost_per_person > (
+
+    -- 4. Subquery: SELECT AVG(cost_per_person) FROM swiggy
+    --    - This subquery calculates the average 'cost_per_person' across all rows in the 'swiggy' table.
+    --    - The AVG() function computes the average of the 'cost_per_person' column.
+    --    - The result is a single value: the average cost per person across all restaurants.
+    
+    SELECT AVG(cost_per_person) FROM swiggy
+);
+
+
 #Q9
+RETRIEVE THE DETAILS OF RESTAURANTS THAT HAVE THE SAME NAME BUT ARELOCATED 
+IN DIFFERENT CITIES.
+
 select distinct t1.restaurant_name,t1.city,t2.city
 from swiggy t1 join swiggy t2 
 on t1.restaurant_name=t2.restaurant_name and
 t1.city<>t2.city;
 
 #Q10
+WHICH RESTAURANT OFFERS THE MOST NUMBER OF ITEMS IN THE 'MAIN COURSE'CATEGORY?
+
 select distinct restaurant_name,menu_category
 ,count(item) as no_of_items from swiggy
 where menu_category='Main Course' 
@@ -152,6 +184,9 @@ group by restaurant_name,menu_category
 order by no_of_items desc limit 1;
 
 #Q11
+LIST THE NAMES OF RESTAURANTS THAT ARE 100% VEGEATARIAN IN ALPHABETICAL ORDER
+OF RESTAURANT NAME.
+
 select distinct restaurant_name,
 (count(case when veg_or_nonveg='Veg' then 1 end)*100/
 count(*)) as vegetarian_percetage
@@ -161,12 +196,16 @@ having vegetarian_percetage=100.00
 order by restaurant_name;
 
 #Q12
+WHICH IS THE RESTAURANT PROVIDING THE LOWEST AVERAGE PRICEFOR ALL ITEMS?
+
 select distinct restaurant_name,
 avg(price) as average_price
 from swiggy group by restaurant_name
 order by average_price limit 1;
 
 #Q13
+WHICH TOP 5 RESTAURANT OFFERS HIGHEST NUMBER OF CATEGORIES?
+
 select distinct restaurant_name,
 count(distinct menu_category) as no_of_categories
 from swiggy
@@ -174,6 +213,8 @@ group by restaurant_name
 order by no_of_categories desc limit 5;
 
 #Q14
+WHICH RESTAURANT PROVIDES THE HIGHEST PERCENTAGE OF NON-VEGEATARIAN FOOD?
+
 select distinct restaurant_name,
 (count(case when veg_or_nonveg='Non-veg' then 1 end)*100
 /count(*)) as nonvegetarian_percentage
