@@ -81,7 +81,7 @@ Features:
 - [x] **SQL** - 
 ### Project 4: Swiggy Data Analysis <br />
 ### Overview
-This <b>SQL CASE STUDY : SWIGGY </b>contains an in-depth SQL-based analysis of restaurant data. The analysis addresses key business questions such as identifying top-rated restaurants, evaluating city-wise averages, and examining cost and cuisine trends across various restaurants.
+This <b>SQL CASE STUDY : SWIGGY </b>contains an in-depth SQL-based analysis of restaurant data. The analysis addresses key business questions such as identifying top-rated restaurants, evaluating city-wise averages, and examining cost and cuisine trends across various restaurants. 
 
 ![Project 4: Swiggy Data Analysis:](https://github.com/saiky-111/DataPortfolioProjects/blob/master/05_SQL/SWIGGY_CASE_STUDY/image.png)
 
