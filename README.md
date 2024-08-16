@@ -88,7 +88,7 @@ This <b>SQL CASE STUDY : SWIGGY </b>contains an in-depth SQL-based analysis of r
   - Swiggy Data Analysis: REPORT : CHECKOUT  <br />
 *Check The SQL Report :* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/05_SQL/SWIGGY_CASE_STUDY/swiggy%20sql%20case%20study.pdf)**<br />
 *Check The CSV File :* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/05_SQL/SWIGGY_CASE_STUDY/Swiggy.csv)**<br />
-*Check The SQL Script :* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/05_SQL/SWIGGY_CASE_STUDY/swiggy_data_analysis.sql)**<br />
+*Check The SQL Script :* **[HERE](https://github.com/saiky-111/DataPortfolioProjects/blob/master/05_SQL/SWIGGY_CASE_STUDY/swiggy_data_analysis.sql)**<br /> 
   
 - [x] **PowerBI** - 
   -Upcoming.
